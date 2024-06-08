@@ -1,19 +1,50 @@
-main{
-    margin-top: 1em;
-    background: #119bb1;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+/* Main container styling */
+main {
+  margin-top: 1em;
+  background-color: #119bb1;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px; /* Added padding for better content spacing */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* App section styling */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #119bb1;
+  padding: 20px; /* Added padding for spacing */
+  border-radius: 8px; /* Added border radius for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+  text-align: center; /* Center-align text */
+  max-width: 80%; /* Ensure the app doesn't take too much width */
+}
+
+/* App header styling */
+.app h1 {
+  color: #ffffff; /* Changed color to white for better contrast */
+  margin: 0; /* Remove default margin */
+  font-size: 2rem; /* Adjusted font size */
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  main {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 10px; /* Reduced padding for smaller screens */
   }
-  .app{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #119bb1;
+
+  .app {
+    max-width: 100%; /* Allow full width for small screens */
+    padding: 15px; /* Reduced padding */
   }
-  .app h1{
-    color: #119bb1;
+
+  .app h1 {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
   }
+}
