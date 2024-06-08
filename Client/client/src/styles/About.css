@@ -1,0 +1,72 @@
+/* About.css */
+
+/* Container styling */
+.about-container {
+  padding: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Section styling */
+.introduction,
+.features,
+.development-story,
+.team-credits {
+  margin-bottom: 24px;
+}
+
+/* Headings styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Text and list styling */
+p, ul {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* List styling */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+ul li {
+  margin-bottom: 8px; /* Slightly increased spacing for readability */
+}
+
+/* Bold text */
+strong {
+  font-weight: 600;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+}

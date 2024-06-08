@@ -1,0 +1,19 @@
+main{
+    margin-top: 1em;
+    background: #119bb1;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #119bb1;
+  }
+  .app h1{
+    color: #119bb1;
+  }

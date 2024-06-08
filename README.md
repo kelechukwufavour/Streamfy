@@ -1,1 +1,1 @@
-# Streamfy
+A simple video streaming app
