@@ -36,8 +36,8 @@ function Header() {
         )}
       </div>
       <div className="auth-buttons">
-        <Link to="/signin" className="auth-link" onClick={closeMenu}>Sign In</Link>
-        <Link to="/signup" className="auth-link" onClick={closeMenu}>Sign Up</Link>
+        <Link to="/signin" className="auth-button" onClick={closeMenu}>Sign In</Link>
+        <Link to="/signup" className="auth-button" onClick={closeMenu}>Sign Up</Link>
       </div>
     </header>
   );

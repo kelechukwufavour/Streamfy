@@ -31,7 +31,7 @@ function About() {
       <section className="development-story">
         <h2>Development Story</h2>
         <p>
-          Streamfy was conceptualized and developed over several months as part of the final project for the cohort 15 students at ALX SE. The project aimed to integrate various technical skills acquired during the course to deliver a comprehensive and engaging video streaming platform. From initial design to deployment, the development process involved collaborative efforts, innovation, and rigorous testing to ensure a high-quality user experience.
+          Streamfy was conceptualized and developed over several weeks as part of the final project for the cohort 15 students at ALX SE. The project aimed to integrate various technical skills acquired during the course to deliver a comprehensive and engaging video streaming platform. From initial design to deployment, the development process involved collaborative efforts, innovation, and rigorous testing to ensure a high-quality user experience.
         </p>
       </section>
 

@@ -2,9 +2,9 @@
 
 /* Container styling */
 .about-container {
-  padding: 16px;
   max-width: 960px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Section styling */
@@ -12,43 +12,43 @@
 .features,
 .development-story,
 .team-credits {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 /* Headings styling */
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 /* Text and list styling */
 p, ul {
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 /* List styling */
 ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 ul ul {
   list-style-type: circle;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   margin-bottom: 0;
 }
 
 ul li {
-  margin-bottom: 8px; /* Slightly increased spacing for readability */
+  margin-bottom: 0.5rem; /* Adjusted spacing for readability */
 }
 
 /* Bold text */
