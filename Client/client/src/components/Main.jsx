@@ -6,7 +6,7 @@ import zoomIcon from '../assets/zoom.svg';
 const Main = () => {
   const [query, setQuery] = useState('');
   const [databaseContents, setDatabaseContents] = useState([
-    { title: 'Big Buck Bunny', src: '/assets/big_buck_bunny.mp4' },
+    { title: '8Yearold Future Tech', src: '/assets/8Yearold_future.mp4' },
     { title: 'Coding Lessons', src: '/assets/coding_lessons.mp4' },
     { title: 'Music Video', src: '/assets/music_video.mp4' },
     // Add more database contents as needed
