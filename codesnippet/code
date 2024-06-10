@@ -15,50 +15,48 @@ app.listen(4000, () => {
 
 {
 // This code has to do with the react component of the page and how each buttons function
-	import React from 'react';
-	import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-	import Header from './components/Header';
-	import Footer from './components/Footer';
-	import Main from './components/Main';
-	import About from './components/About';
-	import SignInForm from './components/SignInForm';
-	import SignUpForm from './components/SignUpForm';
-	
-	import './App.css';
-	
-	const App = () => {
-	  return (
-		<Router>
-		  <div>
-			<Header />
-			<div className="content">
-			  <Routes>
-				<Route path="/" element={<Main />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/signin" element={<SignInForm />} />
-				<Route path="/signup" element={<SignUpForm />} />
-			  </Routes>
-			</div>
-			<Footer />
-		  </div>
-		</Router>
-	  );
-	}
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import About from './components/About';
+import SignInForm from './components/SignInForm';
+import SignUpForm from './components/SignUpForm';
+import './App.css';	
+const App = () => {
+return (
+<Router>
+<div>
+<Header />
+<div className="content">
+<Routes>			 
+ <Route path="/" element={<Main />} />
+<Route path="/about" element={<About />} />
+<Route path="/signin" element={<SignInForm />} />
+<Route path="/signup" element={<SignUpForm />} />
+</Routes>
+</div>
+<Footer />
+</div>
+</Router>
+);
+}
 	
 	export default App;
 
 //The main page of the site
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>streamfy</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>streamfy</title>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
 }
