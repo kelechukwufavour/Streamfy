@@ -18,6 +18,8 @@ function Header() {
       <nav className="nav-desktop">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/about" className="nav-link">About</Link>
+        <Link to="/signin" className="auth-button" onClick={closeMenu}>Sign In</Link>
+        <Link to="/signup" className="auth-button" onClick={closeMenu}>Sign Up</Link>
       </nav>
       <div className="nav-mobile">
         <button
@@ -34,10 +36,6 @@ function Header() {
             <li><Link to="#" className="menu-item" onClick={closeMenu}>Contact</Link></li>
           </ul>
         )}
-      </div>
-      <div className="auth-buttons">
-        <Link to="/signin" className="auth-button" onClick={closeMenu}>Sign In</Link>
-        <Link to="/signup" className="auth-button" onClick={closeMenu}>Sign Up</Link>
       </div>
     </header>
   );
