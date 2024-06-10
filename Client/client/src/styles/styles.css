@@ -24,7 +24,7 @@ main {
 .app h1 {
   color: #119bb1;
   font-size: 2rem;
-  margin: 0 0 20px; /* Adjusted margin */
+  margin: 0 0 20px;
 }
 
 /* Comment and Like segment styling */
@@ -33,10 +33,126 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 20px; /* Reasonable space before the footer */
+  margin-top: 20px;
 }
 
-/* Media Queries for responsive design */
+/* Player container */
+.player-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #1f2937;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Video title styling */
+.video-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Video wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ensure video doesn't exceed container width */
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Video element */
+.video-element {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;  
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Controls container */
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Hide controls by default */
+}
+
+.video-wrapper:hover .controls-container {
+  opacity: 1; /* Show controls on hover */
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.volume-slider, .seek-slider {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.time-display {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Overlay play button styling */
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.overlay-play-icon {
+  font-size: 50px;
+  color: white;
+}
+
+/* Video info styling */
+.video-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-info h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.video-info p {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
   main {
     padding: 15px;
@@ -54,6 +170,24 @@ main {
   }
 
   .comment-like-wrapper {
-    margin-top: 15px; /* Adjusted space before the footer for smaller screens */
+    margin-top: 15px;
+  }
+
+  .player-container {
+    padding: 15px;
+  }
+
+  .controls-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-button {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .volume-slider, .seek-slider {
+    margin: 5px 0;
   }
 }

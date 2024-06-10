@@ -3,7 +3,7 @@ import Player from './Player';
 import searchIcon from '../assets/search.svg';
 import zoomIcon from '../assets/zoom.svg';
 import codingLessons from '../assets/coding_lessons.mp4';
-import yearOldFuture from '../assets/Yearold_future .mp4';
+import yearOldFuture from '../assets/Yearold_future .mp4'; // Corrected path (make sure the file exists)
 import musicVideo from '../assets/music_video.mp4';
 
 const Main = () => {
@@ -30,7 +30,7 @@ const Main = () => {
 
   return (
     <section>
-      <Player video={selectedVideo} onSelect={handleVideoSelect} />
+      <Player video={selectedVideo} />
       <div className="database">
         <h1>Playlist</h1>
         <div className="search-input-wrapper">
@@ -47,7 +47,7 @@ const Main = () => {
           <div
             className="database-contents"
             key={index}
-            onClick={() => handleVideoSelect(video)}
+            onClick={() => handleVideoSelect(content)} // Corrected to use "content"
           >
             <img src={zoomIcon} alt="zoom" />
             <p>{content.title}</p>
