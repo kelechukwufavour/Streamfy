@@ -1,6 +1,6 @@
 .form-container {
   width: 500px;
-  height: 75v;
+  min-height: 75v;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
